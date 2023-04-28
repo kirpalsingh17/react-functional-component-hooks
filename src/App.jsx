@@ -3,6 +3,7 @@ import "./App.css";
 import UserContext from "./UserContext";
 
 import First from "./components/First";
+import UseRef from "./components/UseRef";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -37,6 +38,7 @@ function App() {
 
 
   return (
+    <div>
     <UserContext.Provider value={count}>
       <div>
         <h2>{count}</h2>
@@ -48,6 +50,8 @@ function App() {
       </div>
       <First />
     </UserContext.Provider>
+    <UseRef />
+    </div>
   );
 }
 
