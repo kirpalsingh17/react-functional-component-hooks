@@ -6,6 +6,7 @@ import First from "./components/First";
 import UseRef from "./components/UseRef";
 import UseReducer from "./components/UseReducer";
 import UseCallback from "./components/UseCallback";
+import UseMemo from "./components/UseMemo";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -55,6 +56,7 @@ function App() {
     <UseRef />
     <UseReducer />
     <UseCallback />
+    <UseMemo />
     </div>
   );
 }
