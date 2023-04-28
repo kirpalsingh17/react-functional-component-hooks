@@ -4,6 +4,8 @@ import UserContext from "./UserContext";
 
 import First from "./components/First";
 import UseRef from "./components/UseRef";
+import UseReducer from "./components/UseReducer";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -51,6 +53,7 @@ function App() {
       <First />
     </UserContext.Provider>
     <UseRef />
+    <UseReducer />
     </div>
   );
 }
