@@ -5,7 +5,7 @@ import UserContext from "./UserContext";
 import First from "./components/First";
 import UseRef from "./components/UseRef";
 import UseReducer from "./components/UseReducer";
-
+import UseCallback from "./components/UseCallback";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -54,6 +54,7 @@ function App() {
     </UserContext.Provider>
     <UseRef />
     <UseReducer />
+    <UseCallback />
     </div>
   );
 }
