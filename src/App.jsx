@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import UserContext from "./UserContext";
+
+import First from "./components/First";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,8 +34,10 @@ function App() {
     };
   });
 
+
+
   return (
-    <>
+    <UserContext.Provider value={count}>
       <div>
         <h2>{count}</h2>
         <h2>Width: {width}</h2>
@@ -41,7 +46,8 @@ function App() {
         <button onClick={decrementCount}>Decreament</button>
         <button onClick={increamentCount}>Increament</button>
       </div>
-    </>
+      <First />
+    </UserContext.Provider>
   );
 }
 
